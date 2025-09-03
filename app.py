@@ -16,7 +16,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
+st.secrets["HF_TOKEN"]
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 
@@ -26,7 +26,7 @@ st.sidebar.write("Upload Pdf's")
 
 
 ## Input the Groq API Key
-groq_api_key = os.getenv("API_KEY")
+groq_api_key = st.secrets["API_KEY"]
 # api_key=st.text_input("Enter your Groq API key:",type="password")
 llm=ChatGroq(groq_api_key=groq_api_key,model_name="llama-3.1-8b-instant")
 
