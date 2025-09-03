@@ -22,8 +22,6 @@ duckduckgo-search
 pymupdf
 arxiv
 wikipedia
-mysql-connector-python
-SQLAlchemy
 validators==0.28.1
 youtube_transcript_api
 unstructured
@@ -35,3 +33,4 @@ youtube-transcript-api
 pytube
 langchain_huggingface
 huggingface_hub
+pysqlite3-binary
